@@ -1,5 +1,6 @@
 # Computer Systems 컴퓨터구조론 
-Getting started
+##Getting started
+
 Your computer needs be able to run Java and Python 3 scripts for this project. You may use Linux, Windows 10, or Mac OS.
 
 If you run Windows 10, install Ubuntu by following this:
@@ -24,6 +25,7 @@ You should see ex1.s, ex2.s, factorial.s  (midterm project files) and argmax.s, 
 you can start editing
 $vim argmax.s
 
-Submission
+##Submission
+
 zip project files to up
 $zip MyName.zip -r *then, upload MyName.zip to blackboard homework submission.
