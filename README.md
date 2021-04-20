@@ -49,7 +49,7 @@ $vim argmax.s
 zip project files including git log
 
 ```console
-$zip <YourName>.zip -r *
+$zip <YourName>.zip -r * .git
 ```
 then, upload MyName.zip to LMS homework submission.
 
