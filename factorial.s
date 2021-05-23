@@ -5,20 +5,25 @@ n: .word 8
 
 .text
 main:
-    la t0, n
-    lw a0, 0(t0)
-    jal ra, factorial
+    la t0, n #load adrress
+    lw a0, 0(t0) #load word 
+    mv t0,a0
+    jal ra, factorial #store return address into DR, goto factorial
 
+factorial:
+    addi t0,t0,-1
+    beq t0, x0, exit
+    mul a0,a0,t0
+    jal factorial
+
+exit:
     addi a1, a0, 0
     addi a0, x0, 1
     ecall # Print Result
 
-    addi a1, x0, '\n'
-    addi a0, x0, 11
+    addi a1, x0, '\n' # 개행 
+    addi a0, x0, 11 
     ecall # Print newline
 
     addi a0, x0, 10
     ecall # Exit
-
-factorial:
-    # YOUR CODE HERE
